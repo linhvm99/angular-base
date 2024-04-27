@@ -6,14 +6,14 @@ export const routes: Routes = [
     redirectTo: 'dashboard',
     pathMatch: 'full',
   },
-  {
-    path: '',
-    component: HomeComponent,
-    children: [
-      {
-        path: 'dashboard',
-        loadChildren: () => import('@modules/main/modules/dashboards').then((x) => x.DashboardsModule),
-      },
-    ],
-  },
+//   {
+//     path: '',
+//     component: HomeComponent,
+//     children: [
+//       {
+//         path: 'dashboard',
+//         loadChildren: () => import('@modules/main/modules/dashboards').then((x) => x.DashboardsModule),
+//       },
+//     ],
+//   },
 ];
